@@ -1,0 +1,24 @@
+<form [formGroup]="ostinatoData">
+    <mat-form-field class="message-input">
+    <mat-label>name</mat-label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+    <mat-form-field class="message-input">
+      <mat-label>pitches</mat-label>
+      <input matInput formControlName="pitches">
+    </mat-form-field>
+    <mat-form-field class="message-input">
+      <mat-label>amplitudes</mat-label>
+      <input matInput formControlName="amplitudes">
+    </mat-form-field>
+    <mat-form-field class="message-input">
+      <mat-label>interonset intervals</mat-label>
+      <input matInput formControlName="interonsetIntervals">
+    </mat-form-field>
+    <mat-form-field class="message-input">
+      <mat-label>duration ratios</mat-label>
+      <input matInput formControlName="durationRatios">
+    </mat-form-field>
+    <button mat-button (click)="loadData()">Load Score</button>
+    <button mat-button (click)="sendData()">Build Score</button>
+  </form>
